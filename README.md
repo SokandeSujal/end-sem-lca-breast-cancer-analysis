@@ -53,9 +53,10 @@ pip install numpy pandas seaborn matplotlib scikit-learn
    sns.kdeplot(X_scaled, color='blue')
    sns.heatmap(X.corr(), annot=True, cmap="coolwarm", fmt=".2f")
    ```
-   ![Before Scaling](Data Spread_before_scaling.png)
-   ![After Scaling](Data Data Spread_After_scaling.png)
-   
+![Before Scaling](Data_Spread_before_scaling.png)
+![After Scaling](Data_Spread_After_scaling.png)
+
+
 5. **Feature Selection**:
    - A Random Forest model is trained on the scaled data to determine the importance of each feature.
    - Features with importance above the mean value are selected for further model training.
